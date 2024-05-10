@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Meta Tag for consitent viewing across different devices is used on all pages-->
+    <title>Carsite - Home</title> <!--Tab Name-->
+    <link rel="stylesheet" href="style.css"> <!--Link to CSS file-->
+</head>
+<body>
+    <header>
+        <h1>Japanese car manufacturers</h1> <!--Main page title is H1-->
+    </header>
+    <nav> <!--Navigation bar is used on all pages-->
+        <a href="nissan.html"><button><h3>Nissan</h3></button></a></li>  <!--Button text uses header for larger appearance without CSS-->
+        <a href="toyota.html"><button><h3>Toyota</h3></button></a></li>
+        <a href="mazda.html"><button><h3>Mazda</h3></button></a></li>
+    </nav>
+    <section> <!--Main content section-->
+        <h2>Japanese car manufacturers</h2>
+        <p>Japan is home to some of the most well-known car manufacturers in the world. Companies like Nissan, Toyota, and Mazda have been producing high-quality vehicles for decades. These companies are known for their innovation, reliability, and performance. Whether you're looking for a compact car, a luxury sedan, or a sporty coupe, Japanese car manufacturers have something for everyone. 
+        <br> In the 80s and 90s Japan was going through an economic boom, parents were able to afford cars for their children and even the younger population could afford the newest sports car. This resulted in some of the greatest development in the automotive industry as well as indroduced many now imfamous cars.
+        </p>
+        <h2>Japanese car culture can take many shapes</h2>
+            <p>Some drivers opt to keep their cars as is but many chose to modify them and make them their own. These modifications take many shapes, some modify for speed while other modify for the sake of turning heads or simply to their own personal taste no matter that the public thinks about it.
+            <br>The Japanese car culture is not just about the cars themselves but also about the community that comes with it. Many car enthusiasts gather at car meets
+            </p>
+            <!--Need to fix the article text  -->
+        <article> <!--Article tag is used for all articles on the page-->
+        <h3>Drifting</h3> <!--H3 rather than H2 is used for sub headers to keep the page organized-->
+            <p>Drifting is a driving technique where the driver intentionally oversteers, causing loss of traction in the rear wheels, while maintaining control from entry to exit of a corner. A car is drifting when the rear slip angle is greater than the front slip angle, to such an extent that often the front wheels are pointing in the opposite direction to the turn. While for racing purists this may be a waste of rubber, for drifters, this is a way of life and a form of self expression. While drifting most often happens in closed courses, some drivers take to mountain passes or closed of roads at night to take the self expression to the nth degree.</p>
+            <img src="images/dorimatsuri.png" width="300" alt="A Nissan s13 swinging out the rear"> <!-- Meta data for SEO-->
+        </article>
+        <article>
+        <h3>VIP (Bippu)</h3>
+            <p> While most modded cars are sporty coupes and hatchbacks, some opt for a more "VIP" approach. The economic boom in Japan equally introduced many luxary cars to the market and some of the more expressive owners chose to modify these large saloons and sedans with suede interiors, shiny paintjobs and flashy wheels tucked into the fenders almost certainly ruining the once luxary ride quality but putting passerbys in awe and surely a huge grin on the owners face.</p>
+            <img src="images/crownvip.jpg" width="300" alt="Slammed Toyota crown on shiny wheels"> <!-- Meta data for SEO-->
+        </article>
+        <article>
+        <h3>Time attack</h3>
+            <p>While much of Japanese car culture subsets are all about being different and expression, some car enthusiasts opt to take the core use of cars to the next level. Time attack racing is the dicipline of getting a car around a track in as little time as possible. Time attack takes place without other vehicle in the way to impede. The cars you'll see at a time attack event can vary from million dollar hyper cars to minivans. The times are devided into classes so almost any car has a class to be in. The time attack machines usually sport flashy liveries and huge aerodynamic componenets to keep them stuck to the ground during cornering.</p>
+            <img src="images/fd3s.jpg" width="300" alt="fd3s time attack car tsukuba ciruit"> <!-- Meta data for SEO-->
+        </article>
+    </section>
+
+    <section> <!--Form section is differnet for CSS use-->
+        <h2>Tell us about your favorite car</h2>
+        <form> <!--Form for user input-->
+            <label for="year">Year</label> <!--Labels used for input fields for better user experience-->
+            <input type="text" name="year" placeholder="Year" required>
+            <label for="Make">Make</label>
+            <input type="text" name="Make" placeholder="Make" required>
+            <br> <!--Breaks used to organise types of input data and to prevent having one long line-->
+            <label for="Model">Model</label>
+            <input type="text" name="Model" placeholder="Model" required>
+            <label for="Trim">Trim (optional)</label>
+            <input type="text" name="Trim" placeholder="Trim (Optional)"> <!-- Some cars have addiotnal trim names so the field is optional-->
+            <br> <!--Breaks used to organise types of input data and to prevent having one long line-->
+            <input type="radio" name = "status" value="new">Currently Produced   
+            <br>
+            <label for="MSRP">MSRP</label><br>
+            <input type="text" name = "MSRP" placeholder="MSRP">
+            <br>
+            <h4> Contact me Via:</h4>
+            <input type="radio" name = "email"> Email
+            <input type="radio" name = "phone"> Phone
+            <input type="text" name = "contact" placeholder="Contact Information">
+            <br>
+            <input type="checkbox" name="newsletter" value="yes"> Sign up for our newsletter
+            <input type="checkbox" name="ToS" value="yes" required> I agree to the <a href="Termsofservice.html">Terms of Service</a> <!-- User must accept to submit the form--> 
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer> <!--Footer is used on all pages-->
+        <p>&copy; 2024 Car and stuff inc</p> <!-- Copywrite html entity-->
+    </footer>
+</body>
+</html>
